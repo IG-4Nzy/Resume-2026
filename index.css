@@ -1,0 +1,153 @@
+body {
+    font-family: "Segoe UI", Calibri, Arial, sans-serif;
+    font-size: 10.3pt; /* Reduced slightly */
+    line-height: 1.5;
+    color: #222;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; /* reduced for screen preview */
+}
+
+.resume {
+    width: 210mm;
+    min-height: 297mm;
+    background: #ffffff;
+    padding: 15mm 20mm; /* reduced padding for more space */
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+    margin-bottom: 25px; /* reduced */
+    padding-bottom: 10px; /* reduced */
+    border-bottom: 1px solid #ccc;
+}
+
+.header-top{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 4px;
+}
+
+.name {
+    font-size: 20pt; /* slightly reduced */
+    font-weight: 700;
+    margin: 0 0 2px 0;
+}
+
+.role {
+    font-size: 10pt;
+    font-weight: 500;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    font-size: 10.5pt;
+    color: #333;
+    margin: 0;
+}
+
+.header-contact p {
+    margin: 0;
+}
+
+/* SECTION */
+section {
+    margin-bottom: 20px; /* reduced */
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: 700;
+    margin-bottom: 8px;
+    padding-left: 8px;
+    border-left: 3px solid #222;
+}
+
+h3 {
+    font-size: 11pt;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.meta {
+    font-size: 10.5pt;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 6px;
+}
+
+ul {
+    margin: 6px 0 10px 16px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+.page-break {
+    page-break-before: always;
+    break-before: page;
+}
+
+.print-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: 0.25s ease;
+    z-index: 9999;
+}
+
+.print-btn:hover {
+    background: #000;
+    transform: translateY(-3px);
+}
+
+/* PRINT SETTINGS */
+@page {
+    size: A4;
+    margin: 15mm; /* Reduced to increase printable area */
+}
+
+@media print {
+    .resume {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .page-break {
+        page-break-before: always;
+        break-before: page;
+    }
+      .print-btn {
+        display: none !important;
+    }
+}
