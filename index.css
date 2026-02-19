@@ -821,6 +821,10 @@ li {
     .print-btn {
         display: none !important;
     }
+    
+    .button-container{
+        display: none !important;
+    }
 
     .job {
         margin: 0 !important;
