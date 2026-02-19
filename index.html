@@ -9,11 +9,7 @@
 </head>
 
 <body>
-    <div class="toggle-container">
-        <button class="toggle-btn" onclick="toggleResume()">
-            <span class="toggle-label">📄 One-Page Resume</span>
-        </button>
-    </div>
+   
 
     <div class="resume full-resume">
 
@@ -206,6 +202,11 @@
     </div>
 
     <button class="print-btn" onclick="window.print()">🖨️ Print Resume</button>
+     <div class="toggle-container">
+        <button class="print-btn" onclick="toggleResume()">
+            <span class="toggle-label">📄 One-Page Resume</span>
+        </button>
+    </div>
 
     <script>
         function calculateExperience(startDate) {
