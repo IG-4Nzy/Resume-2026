@@ -709,8 +709,8 @@ li {
 
     /* Reset all margins and paddings */
     .header {
-        margin: 0 0 25px 0 !important;
-        padding: 0 0 10px 0 !important;
+        margin: 0 0 12px 0 !important;
+        padding: 0 0 6px 0 !important;
         border-bottom: 1px solid #ccc !important;
         break-inside: avoid !important;
         page-break-inside: avoid !important;
@@ -719,24 +719,25 @@ li {
     .header-top {
         display: flex !important;
         flex-direction: column !important;
-        gap: 2px !important;
-        margin: 0 0 4px 0 !important;
-        padding: 0 !important;
-    }
-
-    .name {
-        font-size: 20pt !important;
-        font-weight: 700 !important;
+        gap: 1px !important;
         margin: 0 0 2px 0 !important;
         padding: 0 !important;
     }
 
+    .name {
+        font-size: 18pt !important;
+        font-weight: 700 !important;
+        margin: 0 0 0px 0 !important;
+        padding: 0 !important;
+        line-height: 1.1 !important;
+    }
+
     .role {
-        font-size: 10pt !important;
+        font-size: 9pt !important;
         font-weight: 500 !important;
         color: #555 !important;
         text-transform: uppercase !important;
-        letter-spacing: 1px !important;
+        letter-spacing: 0.5px !important;
         margin: 0 !important;
         padding: 0 !important;
     }
@@ -745,7 +746,7 @@ li {
         display: flex !important;
         flex-wrap: wrap !important;
         gap: 2px !important;
-        font-size: 10.5pt !important;
+        font-size: 9.5pt !important;
         color: #333 !important;
         margin: 0 !important;
         padding: 0 !important;
@@ -758,54 +759,56 @@ li {
     }
 
     section {
-        margin: 0 0 20px 0 !important;
+        margin: 0 0 12px 0 !important;
         padding: 0 !important;
         break-inside: auto !important;
         page-break-inside: auto !important;
     }
 
     h2 {
-        font-size: 12pt !important;
+        font-size: 11pt !important;
         font-weight: 700 !important;
-        margin: 0 0 8px 0 !important;
-        padding: 0 0 0 8px !important;
+        margin: 0 0 6px 0 !important;
+        padding: 0 0 0 6px !important;
         border-left: 3px solid #222 !important;
         break-after: auto !important;
         page-break-after: auto !important;
     }
 
     h3 {
-        font-size: 11pt !important;
+        font-size: 10.5pt !important;
         font-weight: 600 !important;
-        margin: 10px 0 2px 0 !important;
+        margin: 6px 0 1px 0 !important;
         padding: 0 !important;
         break-after: auto !important;
         page-break-after: auto !important;
     }
 
     .meta {
-        font-size: 10.5pt !important;
+        font-size: 10pt !important;
         color: #444 !important;
-        margin: 0 0 6px 0 !important;
+        margin: 0 0 3px 0 !important;
         padding: 0 !important;
     }
 
     p {
-        margin: 0 0 6px 0 !important;
+        margin: 0 0 4px 0 !important;
         padding: 0 !important;
-        font-size: 10.3pt !important;
+        font-size: 9.8pt !important;
+        line-height: 1.2 !important;
     }
 
     ul {
-        margin: 6px 0 10px 16px !important;
+        margin: 3px 0 6px 14px !important;
         padding: 0 !important;
         list-style-position: inside;
     }
 
     li {
-        margin: 0 0 4px 0 !important;
+        margin: 0 0 2px 0 !important;
         padding: 0 !important;
-        font-size: 10.3pt !important;
+        font-size: 9.8pt !important;
+        line-height: 1.2 !important;
     }
 
     .page-break {
@@ -834,7 +837,7 @@ li {
     }
 
     .projects {
-        margin: 0 0 20px 0 !important;
+        margin: 0 0 12px 0 !important;
         padding: 0 !important;
     }
 
