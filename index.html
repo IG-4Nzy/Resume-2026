@@ -9,8 +9,13 @@
 </head>
 
 <body>
+    <div class="toggle-container">
+        <button class="toggle-btn" onclick="toggleResume()">
+            <span class="toggle-label">📄 One-Page Resume</span>
+        </button>
+    </div>
 
-    <div class="resume">
+    <div class="resume full-resume">
 
         <!-- HEADER -->
         <div class="header">
@@ -28,7 +33,7 @@
         </div>
 
         <!-- TARGET TITLES -->
-        <section>
+        <section class="hide-on-one-page">
             <h2>Target Job Titles</h2>
             <p>
                 Software Developer, Frontend Developer, React Developer, Mobile App Developer,
@@ -62,13 +67,10 @@
                 <li><strong>Backend:</strong> Spring Boot, REST APIs, JWT Authentication, MongoDB, Firebase</li>
                 <li><strong>DevOps & Cloud:</strong> AWS (CodeCommit), Docker (Basic), GitHub Actions</li>
                 <li><strong>Tools:</strong> Git, GitHub, Jira, Postman, Android Studio, VS Code, IntelliJ IDEA</li>
-                <li><strong>Architecture:</strong> MVC, Microservices (Basic), Clean Architecture, Modular Design</li>
-                <li><strong>Software Development:</strong> Agile/Scrum, Unit Testing, Debugging, API Optimization</li>
-            </ul>
         </section>
 
         <!-- ACHIEVEMENTS -->
-        <section>
+        <section class="hide-on-one-page">
             <h2>Key Achievements</h2>
             <ul>
                 <li>Improved application performance by 70% using memoization, optimization, and lazy loading.</li>
@@ -87,7 +89,7 @@
         </section>
 
         <!-- CERTIFICATIONS -->
-        <section>
+        <section class="hide-on-one-page">
             <h2>Certifications</h2>
             <ul>
                 <li>Field Technician Computing & Peripherals – NSQF Level 4 (Government of India)</li>
@@ -116,7 +118,7 @@
         </section>
 
         <!-- SOFT SKILLS -->
-        <section>
+        <section class="hide-on-one-page">
             <h2>Soft Skills</h2>
             <ul>
                 <li>Problem Solving</li>
@@ -222,6 +224,24 @@
         }
         document.getElementById("experience").textContent =
             calculateExperience("2024-06-05");
+
+        // Toggle resume view
+        let isOnePageMode = false;
+        
+        function toggleResume() {
+            const fullResume = document.querySelector('.full-resume');
+            const toggleLabel = document.querySelector('.toggle-label');
+            
+            isOnePageMode = !isOnePageMode;
+            
+            if (isOnePageMode) {
+                fullResume.classList.add('one-page');
+                toggleLabel.textContent = '📄 Full Resume';
+            } else {
+                fullResume.classList.remove('one-page');
+                toggleLabel.textContent = '📄 One-Page Resume';
+            }
+        }
     </script>
 
 </body>
