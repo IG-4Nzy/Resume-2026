@@ -648,7 +648,7 @@ li {
     }
 }
 
-/* PRINT STYLES - Override all screen styles */
+/* PRINT STYLES - Override all screen styles for uniform A4 printing */
 @page {
     size: A4;
     margin: 0;
@@ -663,15 +663,15 @@ li {
     }
 
     html {
-        width: 100%;
-        height: 100%;
+        width: 210mm;
+        height: 297mm;
         margin: 0;
         padding: 0;
     }
 
     body {
-        width: 100% !important;
-        height: 100% !important;
+        width: 210mm !important;
+        height: 297mm !important;
         margin: 0 !important;
         padding: 0 !important;
         display: block !important;
@@ -685,15 +685,19 @@ li {
         align-items: unset !important;
     }
 
+    .button-container {
+        display: none !important;
+    }
+
     .toggle-container {
         display: none !important;
     }
 
     .resume {
-        width: 100% !important;
-        height: auto !important;
-        max-width: 100% !important;
-        min-height: auto !important;
+        width: 210mm !important;
+        height: 297mm !important;
+        max-width: 210mm !important;
+        min-height: 297mm !important;
         margin: 0 !important;
         padding: 15mm 20mm !important;
         background: white !important;
