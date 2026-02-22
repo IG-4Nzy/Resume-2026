@@ -11,7 +11,7 @@
 <body>
    
 
-    <div class="resume full-resume">
+    <div class="resume full-resume one-page">
 
         <!-- HEADER -->
         <div class="header">
@@ -100,7 +100,7 @@
 
             <div class="job">
                 <h3>Software Developer</h3>
-                <p class="meta">IIOTX Technologies Pvt Ltd,Thiruvananthapuram,Kerala — June 2024 to Present</p>
+                <p class="meta">IIOTX Technologies Pvt Ltd,Thiruvananthapuram,Kerala — June 2024 to February 2026</p>
                 <ul>
                     <li>Built scalable web and mobile applications supporting over 500 active users.</li>
                     <li>Developed 50+ reusable UI components that reduced development time by 30%.</li>
@@ -202,9 +202,9 @@
     </div>
 
     <div class="button-container">
-        <button class="toggle-btn" onclick="toggleResume()">
+        <!-- <button class="toggle-btn" onclick="toggleResume()">
             <span class="toggle-label">📄 One-Page Resume</span>
-        </button>
+        </button> -->
         <button class="print-btn" onclick="window.print()">🖨️ Print Resume</button>
     </div>
 
@@ -227,22 +227,22 @@
             calculateExperience("2024-06-05");
 
         // Toggle resume view
-        let isOnePageMode = false;
+        let isOnePageMode = true;
         
-        function toggleResume() {
-            const fullResume = document.querySelector('.full-resume');
-            const toggleLabel = document.querySelector('.toggle-label');
+        // function toggleResume() {
+        //     const fullResume = document.querySelector('.full-resume');
+        //     const toggleLabel = document.querySelector('.toggle-label');
             
-            isOnePageMode = !isOnePageMode;
+        //     isOnePageMode = !isOnePageMode;
             
-            if (isOnePageMode) {
-                fullResume.classList.add('one-page');
-                toggleLabel.textContent = '📄 Full Resume';
-            } else {
-                fullResume.classList.remove('one-page');
-                toggleLabel.textContent = '📄 One-Page Resume';
-            }
-        }
+        //     if (isOnePageMode) {
+        //         fullResume.classList.add('one-page');
+        //         toggleLabel.textContent = '📄 Full Resume';
+        //     } else {
+        //         fullResume.classList.remove('one-page');
+        //         toggleLabel.textContent = '📄 One-Page Resume';
+        //     }
+        // }
     </script>
 
 </body>
